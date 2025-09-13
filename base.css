@@ -6,7 +6,7 @@
     /* Text */
     --text-primary: rgba(92, 174, 144, 0.954);
     --text-strong: rgba(18, 197, 113, 0.954);
-    --text-secondary: rgb(69, 130, 141);
+    --text-secondary: rgb(58, 151, 167);
     --text-dark: rgb(16, 16, 16);
 
     /* Accent Colors */
@@ -122,6 +122,9 @@ a {
     color: var(--neonBlue);
 }
 
+li {
+    line-height: 175%;
+}
 strong {
     color: var(--text-strong);
     /* font-size: larger; */
@@ -179,8 +182,10 @@ section p {
 }
 
 .blurb p {
-    text-align: left;
+    text-align: justify;
 }
+
+
 
 
 .poster {
