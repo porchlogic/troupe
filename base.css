@@ -110,6 +110,13 @@ h2 {
 
 h3 {
     color: var(--text-secondary);
+    background-color: #0b0b0b;
+    font-size: 1.25rem;
+}
+
+h4 {
+    /* font-size: 1.25rem; */
+    color: var(--neonGreen);
 }
 
 p {
