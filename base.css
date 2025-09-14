@@ -179,6 +179,8 @@ section {
     flex-direction: column;
     min-height: 0;
     max-width: 90%;
+    width: 90%;
+    /* height: 80vh; */
     align-items: center;
     margin-top: 20px;
     margin-bottom: 6rem;
@@ -189,9 +191,72 @@ section p {
     line-height: 150%;
 }
 
+
 .blurb p {
     text-align: justify;
 }
+
+.section-content {
+    flex: 1;
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* position: relative; */
+
+    /* justify-content: center; */
+
+    align-items: center;
+
+    /* width: 100%; */
+    /* height: 100%; */
+    text-align: center;
+
+    min-width: 0;
+    /* avoid flex overflow */
+    min-height: 0;
+    container-type: size;
+}
+section .subheading-top {
+    flex-shrink: 1;
+    display: none;
+}
+
+.subheading-top {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5em;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+
+.section-content.active {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 50vh;
+}
+.section-content.active.fx-typeOut {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-content.active.fx-typeOut p {
+    /* visibility: visible; */
+    display: block;
+    /* ensure each line stays its own row */
+    white-space: pre;
+    /* preserves spaces while typing */
+    margin: 0 0 0.5em 0;
+}
+
+
 
 
 
@@ -241,6 +306,7 @@ section p {
 }
 
 
+
 .poster {
     --w: 2;
     /* poster width ratio  */
@@ -251,7 +317,7 @@ section p {
     /* Choose the limiting side of the parent */
     /* width: min(100cqw, calc(100cqh * (var(--w) / var(--h)))); */
     /* width: min(100vw, calc(75vh * (var(--w) / var(--h)))); */
-    width: min(100%, calc(150% * (var(--w) / var(--h))));
+    width: min(100%, calc(140% * (var(--w) / var(--h))));
     height: auto;
 
     /* Optional cosmetics */
@@ -265,18 +331,17 @@ section p {
 }
 
 .poster h3 {
-    /* font-size: 5cqw; */
-    font-size: 4em;
-    margin-bottom: 0.2em;
+    font-size: 14cqw;
+    /* font-size: 5rem; */
+    margin-bottom: 0;
     color: var(--neonGreen);
-    text-align: center;
-    background-color:rgba(0, 0, 0, 0.0);
     padding-left: 1em;
     padding-right: 1em;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .poster p {
-    font-size: 1.5em;
+    font-size: 4cqw;
     line-height: 125%;
     font-weight: lighter;
     color: var(--text-secondary);
